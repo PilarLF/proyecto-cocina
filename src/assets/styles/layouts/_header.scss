@@ -1,0 +1,56 @@
+// Siguiendo la metodología BEM
+@use '../variables' as *;
+
+.header {
+  position: sticky;
+  top:0;
+  z-index: 100;
+  padding: $spacing-sm $spacing-md; // antes: var(--spacing-unit) calc(var(--spacing-unit) * 2)
+  background: $color-white;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+}
+
+.header__inner {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1400px;
+}
+
+.header__logo {
+  display: flex;
+  color: $color-primary;
+  align-items: center;
+  font-family: $font-secondary;
+  font-size: $font-size-xl; // antes: 1.25rem
+  font-weight: bold;
+  gap: $spacing-sm; // antes: 0.5rem
+  text-decoration: none;
+
+      &:hover{
+        transform: translateY(-2px);
+
+        // font-size: $font-size-base * 1.5; 
+        
+    }
+
+}
+
+.header__nav {
+  display: flex !important ;
+  gap: $spacing-md * 2; // antes: calc(var(--spacing-unit) * 2)
+  list-style: none;
+}
+
+.header__link {
+  color: $color-dark;
+  font-family: $font-secondary;
+  font-size: $font-size-base * 0.95; // antes: 0.95rem
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $color-primary;
+  }
+}

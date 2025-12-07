@@ -1,0 +1,55 @@
+/* ==========================================================================
+   COMPONENT - INFO CARD
+   Tarjeta de información con iconos
+   BEM Naming Convention
+   ========================================================================== */
+@use '../variables' as *;
+
+.poster-card {
+  padding: $card-padding;
+  background: $color-white;
+  border-radius: $border-radius-lg;
+  box-shadow: $shadow-md;
+  container-name: info-card;
+  
+  // Container query para adaptabilidad
+  container-type: inline-size;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: $spacing-md;
+    margin-bottom: $spacing-lg;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__icon {
+    width: 24px;
+    color: $color-primary;
+    text-align: center;
+    flex-shrink: 0;
+    font-size: $font-size-xl;
+  }
+
+  &__content {
+    flex: 1;
+  }
+
+  &__label {
+    margin: 0 0 0.25rem;
+    color: $color-dark;
+    font-family: $font-secondary;
+    font-size: $font-size-base;
+    font-weight: $font-weight-medium;
+  }
+
+  &__text {
+    margin: 0;
+    color: $color-dark-light;
+    font-family: $font-secondary;
+    font-size: $font-size-sm;
+  }
+}

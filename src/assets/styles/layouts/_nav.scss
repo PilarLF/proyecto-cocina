@@ -1,0 +1,15 @@
+@use '../variables' as *;
+
+
+.c-nav__link{
+  color: $color-dark;        // tu color definido en _variables.scss
+  font-family: $font-secondary;
+  text-decoration: none;     // quita el subrayado
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $color-primary;   // color al pasar el ratón
+    text-decoration: underline; // opcional
+  }
+}
+

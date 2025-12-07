@@ -1,0 +1,102 @@
+@use '../variables' as *;
+@use '../abstracts/functions'as *;
+
+.page--contact{
+  margin: 0 auto;
+  padding: $spacing-lg;
+  background: $color-beige;
+  min-height: 100dvh;
+}
+
+.c-contact-form {
+  display: flex;
+  margin: 0 auto;
+  padding: $spacing-xl;
+  background: $color-white;
+  border-radius: $border-radius-lg;
+  box-shadow: $shadow-md;
+  flex-direction: column;
+    font-size: large;
+  gap: $spacing-lg;
+  container-type: inline-size;
+  max-width: clamp(320px, 80cqw, 600px);
+  container-type: inline-size;
+  container-name: contactform;
+
+  .mb-3 {
+    margin-bottom: $spacing-lg !important;
+  }
+
+  .form-label {
+    color: $color-secondary;}
+
+  .form-control{
+        &:focus{
+            border-color: color(display-p3 1 0.5 0);
+            box-shadow: 0 0 0 0.25rem hwb(30 0% 0% / 0.3); 
+        }
+    }
+
+
+//   &__group {
+//     display: flex;
+//     flex-direction: column;
+//     gap: $spacing-sm;
+//   }
+
+//   &__label {
+//     font-size: 1rem;
+//     color: $color-dark;
+//     font-weight: 600;
+//   }
+
+//   &__input,
+//   &__textarea {
+//     padding: $spacing-sm $spacing-md;
+//     border: 1px solid $color-beige;
+//     border-radius: $border-radius-sm;
+//     font-size: 1rem;
+//     line-height: 1.4;
+//     color: $color-dark;
+//     background: $color-beige;
+
+//     &:focus {
+//       outline: none;
+//       border-color: $color-primary;
+//       box-shadow: 0 0 0 3px rgba($color-primary, 0.2);
+//     }
+//   }
+
+//   &__button {
+//     align-self: flex-end;
+//     padding: $spacing-sm $spacing-lg;
+//     background: $color-primary;
+//     color: $color-white;
+//     font-size: 1rem;
+//     font-weight: bold;
+//     border: none;
+//     border-radius: $border-radius-sm;
+//     cursor: pointer;
+//     transition: background 0.3s ease;
+
+//     &:hover {
+//       background: $color-secondary;
+//     }
+//   }
+}
+/* Container query */
+@container contactform (min-width: 500px) {
+  .c-contact-form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: $spacing-md;
+  }
+
+  .c-contact-form .mb-3 {
+    flex: 1 1 45%;
+  }
+
+  .c-contact-form button {
+    flex: 1 1 100%;
+  }
+}

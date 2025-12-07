@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jornadas de Cocina Tradicional  |  Génova 2025</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./assets/styles/main.scss">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="page page--home">
+
+  <!-- Header component -->
+  <header class="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">
+        <i class="fas fa-utensils"></i>
+        <span>COCINA</span>
+      </a>
+      <nav >
+        <ul class="header__nav">
+          <li class="c-nav__item">
+            <a href="ponentes.html" class="c-nav__link">Ponentes</a>
+          </li>
+          <li class="c-nav__item">
+            <a href="article.html" class="c-nav__link">Artículos</a>
+          </li>
+          <li class="c-nav__item">
+            <a href="contacto.html" class="c-nav__link">Contáctanos</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<section class="page page--contact">
+  <header class="c-page-header">
+    <h1 class="c-page-header__title">Contacto</h1>
+    <p class="c-page-header__subtitle">
+      ¿Quieres participar en próximas jornadas o colaborar con nosotros? Escríbenos.
+    </p>
+  </header>
+
+  <form class="c-contact-form" name="contact" method="POST" data-netlify="true">
+    <div class="mb-3">
+      <label for="name" class="form-label">Nombre</label>
+      <input type="text" id="name" name="name" class="form-control" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="email" class="form-label">Correo electrónico</label>
+      <input type="email" id="email" name="email" class="form-control" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="message" class="form-label">Mensaje</label>
+      <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-success">Enviar</button>
+  </form>
+</section>
+<!-- 
+<section class="page page--contact">
+  <header class="c-page-header">
+    <h1 class="c-page-header__title">Contacto</h1>
+    <p class="c-page-header__subtitle">
+      ¿Quieres participar en próximas jornadas o colaborar con nosotros? Escríbenos.
+    </p>
+  </header>
+
+  <form class="c-contact-form" name="contact" method="POST" data-netlify="true">
+    <div class="c-contact-form__group">
+      <label for="name" class="c-contact-form__label">Nombre</label>
+      <input type="text" id="name" name="name" class="c-contact-form__input" required>
+    </div>
+
+    <div class="c-contact-form__group">
+      <label for="email" class="c-contact-form__label">Correo electrónico</label>
+      <input type="email" id="email" name="email" class="c-contact-form__input" required>
+    </div>
+
+    <div class="c-contact-form__group">
+      <label for="message" class="c-contact-form__label">Mensaje</label>
+      <textarea id="message" name="message" class="c-contact-form__textarea" rows="5" required></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-success">Enviar</button>
+  </form>
+</section> -->
+
+
+  <!-- Footer Component -->
+  <footer class="c-footer">
+    <div class="c-footer__uppertext">
+      <span> Descubre los verdaderos secretos de la cocina tradicional genovesa de la mano de nuestros ponentes, amplía tus conocimientos y ponlos en práctica en nuestros talleres</span>
+    </div>
+    <div class="c-footer__inner">
+      <div class="c-footer__logo">
+        <i class="fas fa-utensils"></i>
+        <span>COCINA</span>
+      </div>
+      <nav class="c-footer__nav">
+        <ul class="c-footer__nav-list">
+          <li><a href="index.html" class="c-footer__link">Portada</a></li>
+          <li><a href="ponentes.html" class="c-footer__link">Ponentes</a></li>
+          <li><a href="article.html" class="c-footer__link">Artículos</a></li>
+          <li><a href="contacto.html" class="c-footer__link">Contáctanos</a></li>
+        </ul>
+      </nav>
+      <div class="c-footer__social">
+        <a href="#" class="c-footer__social-link" aria-label="Google Plus">
+          <i class="fab fa-google-plus-g"></i>
+        </a>
+        <a href="#" class="c-footer__social-link" aria-label="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="c-footer__social-link" aria-label="Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </div>
+      <p class="c-footer__text">
+        Ayuntamiento de Elche - Concejalía de Cultura · © 2025 Jornadas de Cocina Tradicional
+      </p>
+    </div>
+  </footer>

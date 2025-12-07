@@ -1,0 +1,98 @@
+/* Footer Component */
+@use '../variables' as *;
+
+.c-footer {
+  padding: $spacing-md; // antes: calc(var(--spacing-unit) * 2)
+  background: $color-white;
+  border-top: 2px solid #e0e0e0;
+}
+
+.c-footer__inner {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: $spacing-sm; // antes: var(--spacing-unit)
+  justify-content: space-between;
+  max-width: 1400px;
+}
+
+.c-footer__logo {
+  display: flex;
+  color: $color-primary;
+  align-items: center;
+  font-family: $font-secondary;
+  font-size: $font-size-xl; // antes: 1.25rem
+  font-weight: bold;
+  gap: $spacing-sm; // antes: 0.5rem
+  text-decoration: none;
+
+      &:hover{
+        transform: translateY(-2px);
+
+        // font-size: $font-size-base * 1.5; 
+        
+    }
+}
+
+.c-footer__nav-list {
+  display: flex; 
+  margin:0;
+  padding:0;
+  gap: $spacing-lg; // antes: calc(var(--spacing-unit) * 1.5)
+  list-style: none;
+  
+}
+
+.c-footer__link {
+  display: flex;
+  margin: 0 auto;
+  color: $color-dark;
+  align-items: center;
+  font-family: $font-secondary;
+  font-size: $font-size-sm; // antes: 0.9rem
+  justify-content: space-between;
+  list-style: none;
+  max-width: 1400px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $color-primary;
+  }
+
+}
+
+.c-footer__social {
+  display: flex;
+  gap: $spacing-sm; // antes: var(--spacing-unit)
+}
+
+.c-footer__social-link {
+  color: $color-dark;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $color-primary;
+  }
+}
+
+.c-footer__text {
+  width: 100%;
+  color: $color-dark-light; // antes: #666
+  text-align: center;
+  font-family: $font-secondary;
+  font-size: $font-size-sm; // antes: 0.9rem
+  margin-top: $spacing-sm; // antes: var(--spacing-unit)
+}
+
+.c-footer__uppertext {
+  width: 100%;
+  color: $color-dark; // antes: #666
+  text-align: center;
+  font-family: $font-secondary;
+  font-size: $font-size-xl; // antes: 0.9rem
+  margin-bottom: 2rem; // antes: var(--spacing-unit)
+  margin-top: 2rem;
+}
+

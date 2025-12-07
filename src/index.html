@@ -1,27 +1,156 @@
 <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jornadas de Cocina Tradicional  |  Génova 2025</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./assets/styles/main.scss">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="page page--home">
 
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
-  </head>
-  <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
+  <!-- Header component -->
+  <header class="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">
+        <i class="fas fa-utensils"></i>
+        <span>COCINA</span>
+      </a>
+      <nav >
+        <ul class="header__nav">
+          <li class="c-nav__item">
+            <a href="#" class="c-nav__link">Ponentes</a>
+          </li>
+          <li class="c-nav__item">
+            <a href="article.html" class="c-nav__link">Artículos</a>
+          </li>
+          <li class="c-nav__item">
+            <a href="contacto.html" class="c-nav__link">Contáctanos</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<!--Seccion poster con CSS GRID-->
+  <main>
+    <section class="poster">
+      <div class="poster__grid">
+
+        <!--Titulo-->
+        <div class="poster__title">
+          <h1 class="poster__title-text">
+            Jornadas de<br>
+            Cocina<br>
+            Tradicional<br>
+            Genovesa
+          </h1>
+          <p class="poster__subtitle">Sabores de la auténtica cocina Italiana</p>
+        </div>
+        <!--main imagen-->
+        <div class="poster__image-main">
+          <div class="poster__image-wrapper">
+            <img 
+              src="./assets/images/cultura-genovesa.jpg" 
+              alt="Plato de cocina tradicional preparado con ingredientes locales"
+              class="poster__image"
+              loading="lazy"
+            >
+          </div>
+        </div>
+        <!-- Info Card -->
+        <div class="poster__info">
+          <article class="poster-card">
+            <div class="poster-card__item">
+              <i class="fas fa-calendar-alt poster-card__icon" aria-hidden="true"></i>
+              <div class="postero-card__content">
+                <h2 class="poster-card__label">Fecha</h2>
+                <p class="poster-card__text">15-17 Marzo 2025</p>
+              </div>
+            </div>
+            <div class="poster-card__item">
+              <i class="fas fa-map-marker-alt poster-card__icon" aria-hidden="true"></i>
+              <div class="poster-card__content">
+                <h2 class="poster-card__label">Lugar</h2>
+                <p class="poster-card__text">Centro Cultural, Elche</p>
+              </div>
+            </div>
+            <div class="poster-card__item">
+              <i class="fas fa-users poster-card__icon" aria-hidden="true"></i>
+              <div class="poster-card__content">
+                <h2 class="poster-card__label">Ponentes</h2>
+                <p class="poster-card__text">+15 expertos en gastronomía</p>
+              </div>
+            </div>
+          </article>
+        </div>
+       <!-- Secondary Image -->
+        <div class="poster__image-secondary">
+          <div class="poster__image-wrapper">
+            <img 
+              src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&h=600&fit=crop" 
+              alt="Ingredientes frescos y locales para cocina tradicional"
+              class="poster__image"
+              loading="lazy"
+            >
+          </div>
+        </div>
+        <!-- CTA -->
+        <div class="poster__cta">
+          <div class="cta">
+            <p class="cta__text">
+              Charlas · Talleres · Cursos
+            </p>
+            <a href="#" class="cta-button">
+              Descubre los ponentes
+            </a>
+          </div>
+        </div>
+        <!-- Decoration -->
+        <div class="poster__decoration">
+          <div class="decoration" aria-hidden="true"></div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Component -->
+  <footer class="c-footer">
+    <div class="c-footer__uppertext">
+      <span> Descubre los verdaderos secretos de la cocina tradicional genovesa de la mano de nuestros ponentes, amplía tus conocimientos y ponlos en práctica en nuestros talleres</span>
+    </div>
+    <div class="c-footer__inner">
+      <div class="c-footer__logo">
+        <i class="fas fa-utensils"></i>
+        <span>COCINA</span>
+      </div>
+      <nav class="c-footer__nav">
+        <ul class="c-footer__nav-list">
+          <li><a href="index.html" class="c-footer__link">Portada</a></li>
+          <li><a href="ponentes.html" class="c-footer__link">Ponentes</a></li>
+          <li><a href="article.html" class="c-footer__link">Artículos</a></li>
+          <li><a href="contacto.html" class="c-footer__link">Contáctanos</a></li>
+        </ul>
+      </nav>
+      <div class="c-footer__social">
+        <a href="#" class="c-footer__social-link" aria-label="Google Plus">
+          <i class="fab fa-google-plus-g"></i>
+        </a>
+        <a href="#" class="c-footer__social-link" aria-label="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="c-footer__social-link" aria-label="Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </div>
+      <p class="c-footer__text">
+        Ayuntamiento de Elche - Concejalía de Cultura · © 2025 Jornadas de Cocina Tradicional
       </p>
     </div>
-    <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
-  </body>
+  </footer>
+
+</body>
 </html>
