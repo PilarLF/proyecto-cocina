@@ -54,3 +54,20 @@
     color: $color-primary;
   }
 }
+@media screen and (max-width: 768px) {
+  .header__inner {
+    flex-direction: column;
+    align-items: center;
+    gap: $spacing-md;
+  }
+
+  .header__nav {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .c-nav__item {
+    margin-bottom: $spacing-sm;
+  }
+}
