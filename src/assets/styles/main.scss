@@ -22,6 +22,7 @@
 @use 'variables';
 @use 'abstracts/functions' as *;
 
+
 // 2. Layouts
 @use 'layouts/nav';
 @use 'layouts/header';
@@ -34,4 +35,6 @@
 @use 'components/article';
 @use 'components/ponentes-card';
 @use 'components/contact-form';
-@use '../../../node_modules/bootstrap/scss/bootstrap'
+@use '../../../node_modules/bootstrap/scss/bootstrap';
+
+@layer reset, base, typography, components, overrides;
